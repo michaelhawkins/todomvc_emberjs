@@ -6,59 +6,63 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<section id="todoapp">
-			<header id="header">
-				<h1>todos</h1>
-				<input type="text" id="new-todo" placeholder="What needs to be done" />
-			</header>
-			<section id="main">
-				<ul id="todo-list">
-					<li class="completed">
-						<input type="checkbox" class="toggle">
-						<label>Write Local Cap requirements</label>
-						<button class="destroy"></button>
-					</li>
-					<li class="toggle">
-						<input type="checkbox" class="toggle">
-						<label>Build Local Cap JSON backend</label>
-						<button class="destroy"></button>
-					</li>
-					<li class="toggle">
-						<input type="checkbox" class="toggle">
-						<label>Release Local Cap</label>
-						<button class="destroy"></button>
-					</li>
-					<input type="checkbox" class="toggle-all">
-				</ul>
-				
+		<script type="text/x-handlebars" data-template-name="todos">
+			<section id="todoapp">
+				<header id="header">
+					<h1>todos</h1>
+					<input type="text" id="new-todo" placeholder="What needs to be done" />
+				</header>
+				<section id="main">
+					<ul id="todo-list">
+						<li class="completed">
+							<input type="checkbox" class="toggle">
+							<label>Write Local Cap requirements</label>
+							<button class="destroy"></button>
+						</li>
+						<li class="toggle">
+							<input type="checkbox" class="toggle">
+							<label>Build Local Cap JSON backend</label>
+							<button class="destroy"></button>
+						</li>
+						<li class="toggle">
+							<input type="checkbox" class="toggle">
+							<label>Release Local Cap</label>
+							<button class="destroy"></button>
+						</li>
+						<input type="checkbox" class="toggle-all">
+					</ul>
+					
+				</section>
+				<footer id="footer">
+					<span id="todo-count">
+						<strong>2</strong> todos left
+					</span>
+					<ul id="filters">
+						<li>
+							<a href="all" class="selected">All</a>
+						</li>
+						<li>
+							<a href="active">Active</a>
+						</li>
+						<li>
+							<a href="completed">Completed</a>
+						</li>
+					</ul>
+					
+					<button id="clear-completed">
+						Clear completed
+					</button>
+				</footer>
 			</section>
-			<footer id="footer">
-				<span id="todo-count">
-					<strong>2</strong> todos left
-				</span>
-				<ul id="filters">
-					<li>
-						<a href="all" class="selected">All</a>
-					</li>
-					<li>
-						<a href="active">Active</a>
-					</li>
-					<li>
-						<a href="completed">Completed</a>
-					</li>
-				</ul>
-				
-				<button id="clear-completed">
-					Clear completed
-				</button>
+			<footer id="info">
+				<p>Double click to edit a todo</p>
 			</footer>
-		</section>
-		<footer id="info">
-			<p>Double click to edit a todo</p>
-		</footer>
-		<script src="js/libs/ember-data-v1.0.0-beta.7.js"></script>
-		<script src="js/libs/ember-v1.4.0.js"></script>
-		<script src="js/libs/handlebars-v1.3.0.js"></script>
+		</script>
 		<script src="js/libs/jquery-v2.1.0.js"></script>
+		<script src="js/libs/handlebars-v1.3.0.js"></script>
+		<script src="js/libs/ember-v1.4.0.js"></script>
+		<script src="js/libs/ember-data-v1.0.0-beta.7.js"></script>
+		<script src="js/application.js"></script>
+		<script src="js/router.js"></script>
 	</body>
 </html>
