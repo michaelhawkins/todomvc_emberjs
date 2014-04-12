@@ -47,5 +47,5 @@ pickle-email-*.html
 /config/application.yml
 
 # Ignore IDEA files
-.iml
-.ipr
+*.iml
+*.ipr
