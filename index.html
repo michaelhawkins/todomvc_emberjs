@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" data-framework="emberjs">
 	<head>
 		<meta charset="utf-8">
 		<title>Ember JS - TodoMVC</title>
@@ -15,7 +15,7 @@
 				<section id="main">
 					<ul id="todo-list">
 						{{#each}}
-							<li>
+							<li {{bind-attr class="isCompleted:completed"}}>
 								<input type="checkbox" class="toggle">
 								<label>{{title}}</label><button class="destroy"></button>
 							</li>
@@ -50,14 +50,14 @@
 			</footer>
 		</script>
 
-		<script src="https://s3.amazonaws.com/emberjs.com/getting-started/jquery.min.js"></script>
-		<script src="http://emberjs.com.s3.amazonaws.com/getting-started/handlebars.js"></script>
-  		<script src="http://emberjs.com.s3.amazonaws.com/getting-started/ember.js"></script>
-  		<script src="http://emberjs.com.s3.amazonaws.com/getting-started/ember-data.js"></script>
-<!--		<script src="js/libs/jquery-v2.1.0.js"></script>
+		<!--<script src="https://s3.amazonaws.com/emberjs.com/getting-started/jquery.min.js"></script>-->
+		<!--<script src="http://emberjs.com.s3.amazonaws.com/getting-started/handlebars.js"></script>-->
+  		<!--<script src="http://emberjs.com.s3.amazonaws.com/getting-started/ember.js"></script>-->
+  		<!--<script src="http://emberjs.com.s3.amazonaws.com/getting-started/ember-data.js"></script>-->
+		<script src="js/libs/jquery-v2.1.0.js"></script>
 		<script src="js/libs/handlebars-v1.3.0.js"></script>
-		<script src="js/libs/ember-v1.4.0.js"></script>
-		<script src="js/libs/ember-data-v1.0.0-beta.7.js"></script>-->
+		<script src="js/libs/ember-v1.5.0.js"></script>
+		<script src="js/libs/ember-data-v1.0.0-beta.7.js"></script>
 		<script src="js/application.js"></script>
 		<script src="js/router.js"></script>
 		<script src="js/models/todo.js"></script>
