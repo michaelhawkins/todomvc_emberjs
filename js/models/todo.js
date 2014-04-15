@@ -22,10 +22,5 @@ Todos.Todo.FIXTURES = [
 		id: 3,
 		title: 'Train local cap',
 		isCompleted: false
-	},
-    {
-        id: 4,
-        title: 'Review metrics',
-        isCompleted: false
-    }
+	}
 ];
